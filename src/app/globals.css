@@ -1,3 +1,27 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+} */
+
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -18,4 +42,31 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  transition: background 0.3s ease, color 0.3s ease;
 }
+
+
+a {
+  color: var(--foreground);
+  transition: color 0.3s ease;
+}
+
+h2 {
+  color: #4caf50; /* Green color for links when hovered */
+}
+
+h3{
+  color: #000000;
+}
+
+/* hide events scrollbar */
+
+/* .hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+} */
+
